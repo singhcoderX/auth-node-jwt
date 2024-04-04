@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "target": "ES5", // to get support of older web browser like Internet Explorer 11
+    "module": "ESNext",
+    "noImplicitAny": false,
+    "incremental": false, // this will disable incremental compilation so everytime we change a file
+    // a ts file the whole project is gonna recompiled not only the changed part
+    // this helps in consistency and less resources overhead,
+    "noEmit": true,
+    "preserveConstEnums": true,
+    "baseUrl": "./src",
+    "jsx": "react-jsx",
+    "lib": ["DOM", "ES5", "ES6", "ES7", "ES2017"],
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true, // set it to true for compatability with CommonJs and AMD(Asynchronous Module Definition),
+    "allowJs": true,
+    "declaration": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "Node",
+    "noEmitOnError": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "strict": true,
+    "strictFunctionTypes": true,
+    "pretty": true, // just to get output code in a pretty manner
+    "removeComments": true,
+    "sourceMap": true,
+    "resolveJsonModule": true
+  },
+  "include": ["./src/**/*"],
+  "exclude": ["node_modules"]
+}
