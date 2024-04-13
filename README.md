@@ -1,5 +1,5 @@
-# React and Node.js Session-Based Cookie Authentication
-This repository demonstrates how to implement session-based cookie authentication in a React frontend and a Node.js backend using Express.js.
+# React and Node.js JWT Authentication
+This repository demonstrates how to implement jwt authentication in a React frontend and a Node.js backend using Express.js.
 
 ## Getting Started
 To get started with this project, follow these steps:
