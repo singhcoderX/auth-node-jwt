@@ -131,16 +131,21 @@
 // });
 
 import dotenv from "dotenv";
-import express from "express";
 dotenv.config();
-const app = express();
+import express from "express";
+console.log("loading router");
+import UserRouter from "./api/users/user.router.js";
 
-app.get("/api", (req, res) => {
-  res.json({
-    success: 1,
-    message: "This is rest API working",
-  });
-});
+const app = express();
+app.use(express.json());
+
+// app.get("/api", (req, res) => {
+//   res.json({
+//     success: 1,
+//     message: "This is rest API working",
+//   });
+// });
+app.use("/api/users", UserRouter);
 
 app.listen(process.env.APP_PORT, () => {
   console.log("server is up and running on port:", process.env.APP_PORT);
